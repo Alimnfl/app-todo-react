@@ -3,10 +3,8 @@ import MainLayout from './Pages/MainLayout';
 
 function App() {
   return (
-    <div>
-      <MainLayout>
-        <p className="font-bold ">AWW</p>
-      </MainLayout>
+    <div className="bg-slate-900 flex flex-col w-screen h-screen items-center justify-center text-white ">
+      <MainLayout />
     </div>
   );
 }

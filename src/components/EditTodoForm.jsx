@@ -11,8 +11,8 @@ const EditTodoForm = ({ editTodo, task }) => {
 
   return (
     <form className="flex flex-row  h-[40px]" onSubmit={handleSubmit}>
-      <input value={value} text="text" className="rounded-l-lg w-[380px] text-black px-4 border-slate-900 border" placeholder="Silahkan isi apa saja" onChange={(e) => setValue(e.target.value)} />
-      <button className="rounded-r-lg bg-slate-900 w-[120px]">Add Task</button>
+      <input value={value} text="text" className="bg-slate-800 text-white rounded-l-lg w-[380px] font-semibold px-4 border-slate-900 border" placeholder="Edit this task" onChange={(e) => setValue(e.target.value)} />
+      <button className="rounded-r-lg bg-slate-900 w-[120px]">Edit Task</button>
     </form>
   );
 };

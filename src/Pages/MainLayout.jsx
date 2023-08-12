@@ -29,12 +29,10 @@ const MainLayout = () => {
   };
 
   return (
-    <div className="bg-slate-900 flex flex-col w-screen h-screen items-center justify-center text-white">
-      <div className="bg-slate-700 w-[550px] pt-[40px] pb-[200px] rounded-lg px-7 mx-auto flex flex-col gap-5">
-        <h1 className="flex mx-auto items-center font-sans font-bold text-[30px] py-5">Just Do It!</h1>
-        <TodoForm addTodo={addTodo} />
-        {todos.map((todo, index) => (todo.isEditing ? <EditTodoForm editTodo={editTask} task={todo} /> : <Todo task={todo} key={index} toggleComplete={toggleComplete} deleteTodo={deleteTodo} editTodo={editTodo} />))}
-      </div>
+    <div className="bg-slate-700 w-[580px] pt-[20px] pb-[200px]  rounded-lg px-4 mx-auto flex flex-col items-center gap-5">
+      <h1 className="flex mx-auto items-center font-sans font-bold text-[30px] py-5 ">JUST DO IT!</h1>
+      <TodoForm addTodo={addTodo} />
+      {todos.map((todo, index) => (todo.isEditing ? <EditTodoForm editTodo={editTask} task={todo} /> : <Todo task={todo} key={index} toggleComplete={toggleComplete} deleteTodo={deleteTodo} editTodo={editTodo} />))}
     </div>
   );
 };
